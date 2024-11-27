@@ -1,0 +1,130 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #007aff;
+    color: #fff;
+  }
+  
+  .navbar .logo a {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navbar nav a {
+    margin-left: 15px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navbar nav a:hover {
+    color: #ddd;
+  }
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .cart-item h3 {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  .cart-item button {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .cart-item button:hover {
+    opacity: 0.8;
+  }
+  
+  .cart-item .delete-btn {
+    background-color: #ff4d4d;
+    color: #fff;
+  }
+  
+  .cart-item .increase-btn {
+    background-color: #007aff;
+    color: #fff;
+  }
+  
+  .cart-item .decrease-btn {
+    background-color: #ddd;
+  }
+  
+  .payment-summary {
+    margin-bottom: 20px;
+  }
+  
+  .payment-summary h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .payment-summary ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .payment-summary li {
+    border-bottom: 1px solid #ddd;
+    padding: 5px 0;
+  }
+  
+  form label {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  form input, form select {
+    margin-top: 5px;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .fixed-login-button a,
+  .fixed-login-button button {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  form button:hover {
+    background-color: #005bb5;
+  }
+  
+  .fixed-login-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #007aff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .fixed-login-button button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }

@@ -1,0 +1,77 @@
+/* 로그인/회원가입 페이지 스타일 */
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #007aff;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center; /* 버튼을 중앙으로 정렬 */
+  gap: 10px; /* 버튼 사이 간격 */
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  flex: 1; /* 버튼들이 동일한 크기를 가지도록 설정 */
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  color: #0056b3;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tab-button.active {
+  background-color: #007aff;
+  color: white;
+}
+
+input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 100%;
+  max-width: 320px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #007aff;
+  outline: none;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #007aff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  color: rgb(255, 255, 255);
+}
+
+button.login-button,
+button.signup-button {
+  width: 100%; /* 버튼 크기를 입력 필드와 동일하게 */
+  max-width: 320px;
+}

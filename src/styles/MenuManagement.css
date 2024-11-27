@@ -1,0 +1,69 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #4a90e2;
+  color: white;
+  padding: 5px 10px; /* 버튼 크기 조절 */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px; /* 버튼 글꼴 크기 줄임 */
+  margin: 2px; /* 버튼 간격 추가 */
+  transition: background-color 0.3s ease; /* 마우스오버 효과 */
+}
+
+button:hover {
+  background-color: #357abd; /* 마우스오버 시 어두운 색 */
+}
+
+button:active {
+  background-color: #2b5b91; /* 클릭 시 더 어두운 색 */
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card span {
+  font-size: 16px;
+  color: #555;
+}
+
+.card button {
+  margin-left: 10px;
+}

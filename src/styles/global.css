@@ -1,0 +1,136 @@
+/* 공통 스타일 */
+body {
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* 반응형 네비게이션 바 */
+nav {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* 모바일에서 네비게이션 토글 */
+.nav-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+}
+
+/* 메뉴 카드 */
+.menu-container {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+}
+
+.menu-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.menu-card h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.menu-card p {
+  font-size: 16px;
+  color: #555;
+}
+
+.menu-card button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu-card button:hover {
+  background-color: #005bb5;
+}
+
+.menu-card:hover {
+  transform: scale(1.05);
+}
+
+/* 반응형 레이아웃 */
+@media (max-width: 576px) {
+  .menu-container {
+    grid-template-columns: 1fr; /* 모바일: 한 줄에 1개 */
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .menu-container {
+    grid-template-columns: repeat(2, 1fr); /* 태블릿: 한 줄에 2개 */
+  }
+}
+
+@media (min-width: 769px) {
+  .menu-container {
+    grid-template-columns: repeat(3, 1fr); /* 데스크탑: 한 줄에 3개 */
+  }
+}
